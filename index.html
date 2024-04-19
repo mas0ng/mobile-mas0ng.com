@@ -1,1 +1,81 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mas0ng.com | Home</title>
+<style>
+  body, h1, a {
+    font-weight: bold; /* Makes all text bold */
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+  }
+
+  .branding h1 {
+    font-size: 2em; /* Smaller font for mobile */
+    margin: 0;
+    background: #fff; /* Default background */
+  }
+
+  .branding h1 span {
+    background: -webkit-linear-gradient(left, #654ea3, #eaafc8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .explore-btn {
+    display: inline-block;
+    padding: 8px 16px; /* Slightly smaller padding for mobile */
+    margin-top: 20px;
+    border: 2px solid #654ea3;
+    border-radius: 5px;
+    background: transparent;
+    color: #654ea3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .explore-btn:hover {
+    background: #654ea3;
+    color: #fff;
+  }
+
+  .explore-btn:after {
+    content: '→';
+    display: inline-block;
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+  }
+
+  .explore-btn:hover:after {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .branding h1 {
+      font-size: 1.5em; /* Even smaller font size for very small devices */
+    }
+
+    .explore-btn {
+      padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="branding">
+  <h1>Welcome to <span>mas0ng.com</span></h1>
+  <a href="coming soon.html" class="explore-btn">Explore</a>
+</div>
+</body>
+</html>
